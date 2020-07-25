@@ -11,10 +11,22 @@ service TestService {
       get: "/v1/test",
     };
   }
+
+  rpc Hello(HelloRequest) returns (HelloResponse) {
+    option (google.api.http) = {
+      get: "/v1/hello",
+    };
+  }
 }
 
 message TestRequest {}
 
 message TestResponse {
+  string message = 1;
+}
+
+message HelloRequest {}
+
+message HelloResponse {
   string message = 1;
 }

@@ -16,3 +16,9 @@ func (u *testUsecase) Test(c context.Context, req *pb.TestRequest) (*pb.TestResp
 		Message: "Test Deployment!",
 	}, nil
 }
+
+func (u *testUsecase) Hello(c context.Context, req *pb.HelloRequest) (*pb.HelloResponse, error) {
+	return &pb.HelloResponse{
+		Message: "Hello, GCP!!",
+	}, nil
+}

@@ -3,7 +3,9 @@ package main
 import (
 	"context"
 	"flag"
+	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/golang/glog"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
@@ -13,7 +15,7 @@ import (
 )
 
 var (
-	grpcServerEndpoint = flag.String("grpc-server-endpoint", "localhost:9000", "gRPC server endpoint")
+	grpcServerEndpoint = flag.String("grpc-server-endpoint", fmt.Sprintf("%s:9000", os.Getenv("API_HOST")), "gRPC server endpoint")
 )
 
 func run() error {

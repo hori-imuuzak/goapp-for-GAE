@@ -14,6 +14,6 @@ steps:
    'server' 
   ]
   env:
-  - 'CLOUDSDK_COMPUTE_ZONE=asia-northeast1-a'
-  - 'CLOUDSDK_CONTAINER_CLUSTER=test-app'
+  - 'CLOUDSDK_COMPUTE_ZONE=asia-east1-a'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=sandbox'
 
