@@ -2,7 +2,7 @@ package usecase
 
 import (
 	"context"
-	pb "youtube-manager-go/gen/pb"
+	pb "youtube-manager-go/gen/proto"
 )
 
 type testUsecase struct{}

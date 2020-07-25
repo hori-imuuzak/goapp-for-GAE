@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net"
 	"youtube-manager-go/api/usecase"
-	pb "youtube-manager-go/gen/pb"
+	pb "youtube-manager-go/gen/proto"
 
 	"github.com/golang/glog"
 	"google.golang.org/grpc"
