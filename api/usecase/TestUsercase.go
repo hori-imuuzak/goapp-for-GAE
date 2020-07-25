@@ -13,6 +13,6 @@ func NewTestUsecase() *testUsecase {
 
 func (u *testUsecase) Test(c context.Context, req *pb.TestRequest) (*pb.TestResponse, error) {
 	return &pb.TestResponse{
-		Message: "Test",
+		Message: "Test Deployment!",
 	}, nil
 }
